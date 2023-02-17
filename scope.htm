@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script lang="javascript">
+    var a="bonjour" //Déclaration d"une variable à l'extérieur de la fonction
+    var b="bonsoir" //Déclaration d"une variable à l'extérieur de la fonction
+    const c="Bonne nuit"
+    function test()
+{
+    
+var x = "test1";
+let y = "test2";
+const z = "test3";
+alert(a)  
+alert(b)
+alert(c)
+a="bonjour++++++"
+b="bonsoir++++"
+//c c'est une constante la modification n'est pas autorisée
+//Les variables et constantes déclarées dans le programme principal
+//sont des variables globales et accessibles même à l'intérieur des fonctions 
+}
+test() //appel de la fonction test
+
+alert(a) //Toute modification d'une variable globale (let ou var) est
+// ressentie partout
+alert(b)
+
+alert(z)  //Les variables et constantes déclarées dans la fonction
+//ne sont pas accessibles à l'extérieur de la fonction ce sont des variables locales
+
+
+
+</script>
+</html>

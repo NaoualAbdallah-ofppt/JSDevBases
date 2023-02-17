@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input type="text" id="txt0"/><br/>
+    <input type="button" id="btn1" value="appeler1" onclick="afficher()"/>
+    <input type="text" id="txt1"/><br/>
+    <br/>
+    Introduire un nombre<input type="text" id="txt2"/><br/>
+
+    <input type="button" value="appeler2" 
+    onclick="afficher2(Number(document.getElementById('txt2').value))"/>
+    Le double est <input type="text" id="txt3"/><br/>
+
+    <br/>
+    Introduire un premier nombre<input type="text" id="txt4"/><br/>
+    Introduire un deuxième nombre<input type="text" id="txt5"/><br/>
+    <input type="button" value="appeler3" 
+    onclick="document.getElementById('txt6').value=afficher3(Number(document.getElementById('txt4').value),Number(document.getElementById('txt5').value))"/>
+    La somme est <input type="text" id="txt6"/><br/>
+    <input type="button" value="appeler4_1" 
+    onclick="changerCouleur(this)"/>
+  <br/>
+
+    <input type="button" value="appeler4_2" 
+    onclick="changerCouleur(btn1)"/>
+
+
+</body>
+<script>
+    
+    function afficher()
+    {
+        document.getElementById("txt1").value= document.getElementById("txt0").value
+    }
+    function afficher2(a)
+    {
+        document.getElementById("txt3").value=a*2
+    }
+    function afficher3(a,b)
+    {
+        let x=a+b
+        return x
+    }
+    function changerCouleur(v)
+    {
+        v.style.backgroundColor="red"
+
+    }
+</script>
+</html>

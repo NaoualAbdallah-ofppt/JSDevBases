@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label id="lbl"></label>
+</body>
+<script>
+var D = new Date()
+var A =[12,23,45,78]
+function xx()
+{
+
+}
+
+let x =10
+let y=15
+
+
+
+/*
+const numbers = [45, 4, 9, 16, 25];
+let txt = 0;
+//x prend 0 puis 1 puis 2 jusqu'à numbers.length (indices du tableau)
+for (let i in numbers) {
+txt += numbers[i];
+}
+
+*/
+/*
+for (let i=0;i<numbers.length;i++) {
+txt += numbers[i];
+}
+//console.log(txt)
+*/
+/*
+const person = {prenom:"Hassan", nom:"FILALI", age:25, groupe:"Dev"};
+let txt = "";
+var S=""
+for (let x in person) {
+    S=x +"/" + person[x]
+    txt=txt+S +"<br/>";
+}
+*/
+
+
+const numbers = [45, 4, 9, 16, 25];
+let txt = "";
+//i prend les éléments du tableau 1 à 1
+//le premier i prend 45, puis 4 puis 9...
+for (let i of numbers) {
+txt += i;    //et non txt += numbers[i];
+}
+
+lbl.innerHTML=txt
+rr()
+function rr ()
+{
+for (let i = 0; i < 10; i++)
+{
+if (i === 3) { break; }
+console.log( "The number is " + i + "<br>");
+}
+console.log( "Fin de la boucle <br>");
+
+
+}
+</script>
+</html>
